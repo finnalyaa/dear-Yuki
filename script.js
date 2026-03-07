@@ -143,4 +143,40 @@ var init = function () {
 
 var s = document.readyState;
 if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
+
 else document.addEventListener('DOMContentLoaded', init, false);
+
+// ==========================
+// INTERACTION WEBSITE
+// ==========================
+
+const startBtn = document.getElementById("startBtn");
+const welcome = document.getElementById("welcome");
+
+const letter = document.getElementById("letter");
+const nextGift = document.getElementById("nextGift");
+
+const giftSection = document.getElementById("giftSection");
+const openBouquet = document.getElementById("openBouquet");
+
+const bouquetPopup = document.getElementById("bouquetPopup");
+
+if(startBtn){
+startBtn.onclick = function(){
+    welcome.classList.add("hidden");
+    letter.classList.remove("hidden");
+};
+}
+
+if(nextGift){
+nextGift.onclick = function(){
+    letter.classList.add("hidden");
+    giftSection.classList.remove("hidden");
+};
+}
+
+if(openBouquet){
+openBouquet.onclick = function(){
+    bouquetPopup.classList.remove("hidden");
+};
+}
