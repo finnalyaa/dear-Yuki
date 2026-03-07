@@ -180,3 +180,11 @@ openBouquet.onclick = function(){
     bouquetPopup.classList.remove("hidden");
 };
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    document.getElementById("letter").classList.add("hidden");
+    document.getElementById("giftSection").classList.add("hidden");
+    document.getElementById("bouquetPopup").classList.add("hidden");
+
+});
