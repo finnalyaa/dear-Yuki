@@ -97,3 +97,7 @@ button{
     width:50px;
     margin-top:10px;
 }
+
+.hidden{
+    display: none !important;
+}
